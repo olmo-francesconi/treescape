@@ -1,0 +1,27 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/treescape-core",
+    "crates/treescape",
+]
+default-members = ["crates/treescape"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["Olmo Francesconi <olmo.francesconi@gmail.com>"]
+repository = "https://github.com/olmo-francesconi/treescape"
+homepage = "https://github.com/olmo-francesconi/treescape"
+readme = "README.md"
+
+[workspace.dependencies]
+treescape-core = { path = "crates/treescape-core", version = "0.1.0" }
+anyhow = "1"
+humansize = "2.1"
+jwalk = "0.8"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = true

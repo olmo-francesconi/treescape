@@ -1,0 +1,25 @@
+[package]
+name = "treescape"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+description = "Treemap disk-usage explorer for the terminal. Scan a path, browse where the bytes have gone."
+readme = "../../README.md"
+keywords = ["treemap", "disk-usage", "du", "tui", "filesystem"]
+categories = ["command-line-utilities", "filesystem", "visualization"]
+
+[[bin]]
+name = "treescape"
+path = "src/main.rs"
+
+[dependencies]
+treescape-core = { workspace = true }
+ratatui = "0.28"
+crossterm = "0.28"
+clap = { version = "4.5", features = ["derive"] }
+humansize = { workspace = true }
+anyhow = { workspace = true }
+termbg = "0.5"
