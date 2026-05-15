@@ -11,7 +11,15 @@ A treemap disk-usage explorer for the terminal.
 ## Install
 
 ```sh
+# Homebrew (macOS / Linux)
+brew install olmo-francesconi/treescape/treescape
+
+# crates.io (anywhere with a Rust toolchain)
 cargo install treescape
+
+# Pre-built binary, no Rust needed (macOS / Linux)
+curl --proto '=https' --tlsv1.2 -LsSf \
+  https://github.com/olmo-francesconi/treescape/releases/latest/download/treescape-installer.sh | sh
 ```
 
 Or build from source:
