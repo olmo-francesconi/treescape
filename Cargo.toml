@@ -7,7 +7,7 @@ members = [
 default-members = ["crates/treescape"]
 
 [workspace.package]
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT"
 authors = ["Olmo Francesconi <olmo.francesconi@gmail.com>"]
@@ -16,7 +16,7 @@ homepage = "https://github.com/olmo-francesconi/treescape"
 readme = "README.md"
 
 [workspace.dependencies]
-treescape-core = { path = "crates/treescape-core", version = "0.1.0" }
+treescape-core = { path = "crates/treescape-core", version = "0.1.1" }
 anyhow = "1"
 humansize = "2.1"
 jwalk = "0.8"
