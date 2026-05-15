@@ -1,5 +1,9 @@
 # treescape
 
+[![CI](https://github.com/olmo-francesconi/treescape/actions/workflows/ci.yml/badge.svg)](https://github.com/olmo-francesconi/treescape/actions/workflows/ci.yml)
+[![crates.io](https://img.shields.io/crates/v/treescape.svg)](https://crates.io/crates/treescape)
+[![license](https://img.shields.io/crates/l/treescape.svg)](LICENSE)
+
 A treemap disk-usage explorer for the terminal.
 
 ![treescape](docs/screenshot.png)
